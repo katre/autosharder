@@ -1,0 +1,9 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library", "go_test")
+
+go_binary(
+    name = "autosharder",
+    srcs = ["main.go"],
+    deps = [
+        "@com_github_bazelbuild_buildtools//edit:go_default_library",
+    ],
+)
